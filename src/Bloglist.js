@@ -1,4 +1,4 @@
-const Bloglist = ({ blogs, title, handleDelete }) => {
+const Bloglist = ({ blogs, title }) => {
   //   const blogs = props.blogs;
   //   const title = props.title;
   // note - if using above 2 statments then in bracket will be (props) instead of ({blogs, title})
@@ -9,14 +9,15 @@ const Bloglist = ({ blogs, title, handleDelete }) => {
         <div className="blog-preview" key={blog.id}>
           <h2>{blog.title}</h2>
           <p>Written by {blog.author}</p>
-          <button
+          {/* <button
             onClick={() => {
-              console.log("hello");
               handleDelete(blog.id);
             }}
           >
             delete blog
           </button>
+          
+          note: before uuncommenting write handleDelete in top along side {blogs, title, handleDelete} */}
         </div>
       ))}
     </div>
