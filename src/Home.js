@@ -20,7 +20,6 @@ const Home = () => {
       {blogs && (
         <Bloglist
           blogs={blogs}
-          title={"All Blogs!"}
           // handleDelete={handleDelete}
         />
       )}
