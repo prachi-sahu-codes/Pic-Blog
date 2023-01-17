@@ -104,3 +104,28 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+/* 404 page */
+
+.not-found {
+  text-align: center;
+  margin: 2rem;
+}
+
+.not-found .backHome {
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #f1356d;
+  color: #fff;
+  padding: 10px;
+  /* margin: 20px; */
+  border-radius: 11px;
+}
+.not-found p {
+  margin: 10px 10px 50px;
+  font-size: 20px;
+}
+
+.not-found h1 {
+  font-size: 110px;
+}
