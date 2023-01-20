@@ -11,7 +11,7 @@ const Home = () => {
     data: blogs,
     isPending,
     error,
-  } = useFetch("http://localhost:8000/blogs");
+  } = useFetch("http://localhost:8000/blogs?_sort=likes&_order=desc"); // after ? is for sorting it acc to likes
 
   return (
     <div className="home">

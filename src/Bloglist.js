@@ -10,7 +10,10 @@ const Bloglist = ({ blogs }) => {
         <div className="blog-preview" key={blog.id}>
           <Link to={`/blogs/${blog.id}`}>
             <h2>{blog.title}</h2>
-            <p>Written by {blog.author}</p>
+            <div className="blog-preview-detail">
+              <p>Written by {blog.author}</p>
+              <small>{blog.likes} likes</small>
+            </div>
           </Link>
           {/* <button
             onClick={() => {

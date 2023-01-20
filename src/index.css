@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
+:root {
+  --primary: #5a189a;
+  --secondary: #f2f2f2;
+}
+
 /* base styles */
 * {
   margin: 0;
@@ -12,10 +17,10 @@
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid var(--secondary);
 }
 .navbar h1 {
-  color: #f1356d;
+  color: var(--primary);
 }
 .navbar .links {
   margin-left: auto;
@@ -26,8 +31,15 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  background-color: #59189aeb;
 }
+
+.new-blog {
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 8px;
+}
+
 .content {
   max-width: 600px;
   margin: 40px auto;
@@ -45,7 +57,7 @@
 }
 .blog-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: var(--primary);
   margin-bottom: 8px;
 }
 
@@ -53,17 +65,22 @@
   text-decoration: none;
 }
 
+.blog-preview-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* blog details page */
 .blog-details h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: var(--primary);
   margin-bottom: 10px;
 }
 .blog-details div {
   margin: 20px 0;
 }
 .blog-details button {
-  background: #f1356d;
+  background: var(--primary);
   color: #fff;
   border: 0;
   padding: 8px;
@@ -83,7 +100,7 @@
 }
 .create h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: var(--primary);
   margin-bottom: 30px;
 }
 .create input,
@@ -97,7 +114,7 @@
   display: block;
 }
 .create button {
-  background: #f1356d;
+  background: var(--primary);
   color: #fff;
   border: 0;
   padding: 8px;
@@ -115,7 +132,7 @@
 .not-found .backHome {
   text-decoration: none;
   font-size: 18px;
-  background-color: #f1356d;
+  background-color: var(--primary);
   color: #fff;
   padding: 10px;
   /* margin: 20px; */

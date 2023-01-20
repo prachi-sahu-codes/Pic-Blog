@@ -5,11 +5,13 @@ const Create = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("mario");
+  // const [likes, setLikes] = useState(1);
   const history = useHistory();
 
   const handleSubmit = (e) => {
+    const likes = 1;
     e.preventDefault();
-    const blog = { title, body, author };
+    const blog = { title, body, author, likes };
 
     fetch("http://localhost:8000/blogs/", {
       method: "POST",
