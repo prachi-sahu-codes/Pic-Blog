@@ -23,7 +23,7 @@ const Bloglist = ({ blogs }) => {
             delete blog
           </button>
           
-          note: before uuncommenting write handleDelete in top along side {blogs, title, handleDelete} */}
+          note: before uncommenting write handleDelete in top along side {blogs, title, handleDelete} */}
         </div>
       ))}
     </div>
